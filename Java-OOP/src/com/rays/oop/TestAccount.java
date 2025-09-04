@@ -31,5 +31,9 @@ public class TestAccount {
         Ram.deposit(2000.00);
         Ram.withdrawal(10000.00);
         System.out.println(); 
+        
+ Ritesh.fundTransfer(Ram, 500);
+        
+        
 	}
 }
