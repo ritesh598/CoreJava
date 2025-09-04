@@ -46,6 +46,25 @@ public class Account {
 			System.out.println("Total balance after withdrawal " + getbalance());
 		}
 	 }
+	 //fund transfer method 
+	 public void fundTransfer (Account targetaccount,double amount) {
+		 if (amount>this.balance) {
+			 System.out.println("insufficient balance to transfer");
+			 
+			
+		}else{
+			
+			//withdrawal from current account 
+			this.balance = balance-amount;
+			
+			//deposit into target account 
+			targetaccount.balance = targetaccount.balance ;
+			System.out.println("transfer"+ amount+"from"+ this.number +"to" +targetaccount.number);
+			System.out.println("you new balance" + this.getbalance());
+			System.out.println("recevers new balance" + targetaccount.getbalance());
+			
+		}
+	 }
 }
 
 		
